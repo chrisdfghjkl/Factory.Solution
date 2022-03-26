@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-@model Factory.Models.Category;
+@model Factory.Models.Engineer;
 
 <h3>Engineer Details</h3>
 <hr />
@@ -22,6 +22,6 @@ else
   }
   </ul>
 }
-<p>@Html.ActionLink("Edit Details", "Edit", new { id = Model.CategoryId })</p>
-<p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.CategoryId })</p>
+<p>@Html.ActionLink("Edit Details", "Edit", new { id = Model.EngineerId })</p>
+<p>@Html.ActionLink("Delete Engineer", "Delete", new { id = Model.EngineerId })</p>
 <p>@Html.ActionLink("Back to Engineer List", "Index")</p>
