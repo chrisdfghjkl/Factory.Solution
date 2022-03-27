@@ -4,19 +4,22 @@
 
 @model Factory.Models.Machine
 
-<h3>Add Machine</h3>
+<div class="content">
+  <h3>Add Machine</h3>
 
-@using (Html.BeginForm())
-{
-  @Html.LabelFor(model => model.Name)
-  @Html.TextBoxFor(model => model.Name)
-  <br>
-  @Html.LabelFor(model => model.Description)
-  @Html.TextBoxFor(model => model.Description)
-  <br>
-  @Html.Label("Assign engineer")
-  @Html.DropDownList("EngineerId")
+  @using (Html.BeginForm())
+  {
+    @Html.LabelFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+    <br>
+    @Html.LabelFor(model => model.Description)
+    @Html.TextBoxFor(model => model.Description)
+    <br>
+    @Html.Label("Assign engineer")
+    @Html.DropDownList("EngineerId")
 
-  <input type="submit" value="Add Machine" class="btn btn-primary" />
-}
-<p>@Html.ActionLink("Back to Machine List", "Index")</p>
+    <input type="submit" value="Add Machine" class="btn btn-primary" />
+  }
+  </hr>
+  <p>@Html.ActionLink("Back to Machine List", "Index")</p>
+</div>

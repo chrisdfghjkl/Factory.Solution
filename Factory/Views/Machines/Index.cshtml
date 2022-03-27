@@ -5,17 +5,19 @@
 @using Factory.Models;
 @model List<Factory.Models.Machine>;
 
-<h3>Machines</h3>
+<div class="content">
+  <h3>Machines</h3>
 
-@if (@Model.Count == 0)
-{
-  <h5>No machines have been added yet!</h5>
-} 
+  @if (@Model.Count == 0)
+  {
+    <h5>No machines have been added yet</h5>
+  } 
 
-@foreach (Machine machine in Model)
-{
-  <li>@Html.ActionLink($"{machine.Name}", "Details", new { id = machine.MachineId })</li>
-}
-
-<p>@Html.ActionLink("Add Machine", "Create")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+  @foreach (Machine machine in Model)
+  {
+    <li>@Html.ActionLink($"{machine.Name}", "Details", new { id = machine.MachineId })</li>
+  }
+  </hr>
+  <p>@Html.ActionLink("Add Machine", "Create")</p>
+  <p>@Html.ActionLink("Home", "Index", "Home")</p>
+</div>
