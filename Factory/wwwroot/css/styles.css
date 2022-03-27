@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(87, 107, 151);
+}
+
+.content {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #eee;
+  margin-top: 20px;
+}
